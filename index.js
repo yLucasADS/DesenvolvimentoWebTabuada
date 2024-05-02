@@ -1,13 +1,16 @@
 import http from 'http';
 import url,{URLSearchParams} from 'url';
-
-
-const host = 'localhost';
-const porta = 4000;
+import express from 'express';
 
 
 
-function responderRequisicao(requisicao,resposta){
+const host = '0.0.0.0';
+const porta1 = 4000;
+//const porta2 = 40001;
+
+
+
+function responderRequisicao(requisicao, resposta){
     
 
 
@@ -63,9 +66,18 @@ function responderRequisicao(requisicao,resposta){
 
 
 
-const servidor = http.createServer(responderRequisicao);
+const app = express();
+app.get("/", responderRequisicao);
 
-servidor.listen(porta,host,() =>{
-    console.log('servidor escutando em htpp://'+host+':'+porta);
+app.listen(porta1,host,() =>{
+    console.log('servidor escutando em htpp:// '+host+' : '+porta1);
 
 })
+
+
+/*const servidor = http.createServer(responderRequisicao);
+
+servidor.listen(porta2,host,() =>{
+    console.log('servidor escutando em htpp://'+host+':'+porta2);
+
+})*/
