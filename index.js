@@ -29,11 +29,9 @@ function responderRequisicao(requisicao,resposta){
                resposta.write('<head>');
                resposta.write('<meta charset="UTF-8">');
 
-                              resposta.write('<title>');
+                              resposta.write('<title> Tabuadaa</title>');
                              
-                              resposta.write('</title>');
-
-               resposta.write('</head>');
+              resposta.write('</head>');
 
                      resposta.write('<body>');
 
