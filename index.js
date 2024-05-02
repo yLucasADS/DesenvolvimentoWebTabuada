@@ -55,7 +55,6 @@ function responderRequisicao(requisicao,resposta){
         resposta.write('</html>');
         resposta.end();
 
-n
 
        }
 
