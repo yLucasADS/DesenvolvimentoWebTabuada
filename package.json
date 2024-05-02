@@ -1,0 +1,21 @@
+{
+  "name": "desenvolvimentowebtabuada",
+  "version": "1.0.0",
+  "description": "atividadeTabuada",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yLucasADS/DesenvolvimentoWebTabuada.git"
+  },
+  "author": "Lucas de Araujo Silva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yLucasADS/DesenvolvimentoWebTabuada/issues"
+  },
+  "homepage": "https://github.com/yLucasADS/DesenvolvimentoWebTabuada#readme"
+}
